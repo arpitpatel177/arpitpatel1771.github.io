@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Key Talks - Discussions</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css.css" type="text/css"/>
+		<style>
+		</style>
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="script.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="container-fluid header" >
+			<img src="logo2.png" style="height:70px;position:absolute;top:15px;" />
+			<p class="heading"> <em>Create, <span style="color: #d9d9d9;">Connect,</span> Collaborate ...</em></p>
+			<div class="usrinfo">Welcome, <em>Username</em><img src = "profpic.jpg" class="usrpic" /></div>
+		</div>
+		<div id="fixedbk" data-spy="affix" data-offset-top="110" >
+			<div class="nav">
+				<button class="navbtn home" id="home"><span class="glyphicon glyphicon-home" style="color : #ffffff;font-size:23px;"></span></button>
+				<button class="navbtn" style="position:relative;top:-5px;" data-toggle="modal" data-target="#myModal"><p class="btn">New Topic</p></button>
+				<button class="navbtn undercns" style="position:relative;top:-5px;" ><p class="btn">Notifications</p></button>
+				<button class="navbtn undercns" style="position:relative;top:-5px;" ><p class="btn">Messages</p></button>
+				<button class="navbtn undercns" style="position:relative;top:-5px;"><p class="btn">My Account</p></button>
+				<button class="navbtn" style="position:relative;top:-5px;" id="logout" ><p class="btn">Log Out</p></button>
+				<button class="navbtn undercns" ><span class="glyphicon glyphicon-cog" style="color : #ffffff;font-size:23px;"></span></button>
+			</div>
+			<div id="rslt" data-spy="affix" data-offset-top="110" class="popup">
+				<table class="rsltfdbk">
+					<tr><td class="rslthead">Search Results</td></tr>
+					<tr><td class="result" > <div id="results" ><div class="ntfnd"></div></div></td></tr>
+				</table>
+			</div>
+			<div class="siderow" id="side">
+				<table class="tablesiderow">
+					<tr><td class="sidetable sidelink" id="alltopics"><a class="sidelnk" href="home.html">See All Topics</a></td></tr>
+					<tr><td class="sidetable sidelink unselect"><div id="rcntvis">Recently Visited<span id='rcntvisa' class="glyphicon glyphicon-triangle-right"></span></div>
+						<div id="rcntvisul"><ul class="hidesidelist" >
+							<li><a class="sidelnk" id="tpc1" href="#">Topic 1</li>
+							<li><a class="sidelnk" id="tpc2" href="#">Topic 2 </li>
+							<li><a class="sidelnk" id="tpc3" href="#">Topic 3</li>
+						</ul></div>
+					</td></tr>
+					<tr><td class="sidetable sidelink unselect" id="rcntpst" >Recently Discussed<span id="rcntpsta" class="glyphicon glyphicon-triangle-right"></span>
+						<ul class="hidesidelist" id="rcntpstul">
+							<li><a class="sidelnk" id="tpc1" href="#">Topic 1</li>
+							<li><a class="sidelnk" id="tpc2" href="#">Topic 2 </li>
+							<li><a class="sidelnk" id="tpc4" href="#">Topic 4</li>
+							<li><a class="sidelnk" id="tpc6" href="#">Topic 6</li>
+						</ul>
+					</td></tr>
+					<tr><td class="sidetable sidelink unselect" id="rcntsrch">Recent Searches<span id="rcntsrcha" class="glyphicon glyphicon-triangle-right"></span>
+						<ul class="hidesidelist" id="rcntsrchul">
+							<li><a class="sidelnk" id="tpc1" href="#">Topic 1</li>
+							<li><a class="sidelnk" id="tpc4" href="#">Topic 4 </li>
+							<li><a class="sidelnk" id="tpc6" href="#">Topic 6</li>
+							<li><a class="sidelnk" id="tpc5" href="#">Topic 5</li>
+							<li><a class="sidelnk" id="tpc2" href="#">Topic 2</li>
+						</ul>
+					</td></tr>
+				</table>
+			</div>
+		</div>
+		<div class="content" id="disc" style="border: 0px solid black;margin-top:20px;">
+			<div class="discs" id="discs">
+				<div class="discus" id="discus"><table>
+					<tr><td class="profpic" rowspan="2"><img src="profpic.jpg" class="ppic" /></td>
+					<td class="usrnm">User 1</td></tr>
+					<tr><td class="crap" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td></tr>
+				</table></div>
+				<div class="discus" id="discus"><table>
+					<tr><td class="profpic" rowspan="2"><img src="profpic.jpg" class="ppic" /></td>
+					<td class="usrnm">User 2</td></tr>
+					<tr><td class="crap" >Don't speak nonsense in Latin, idiot.</td></tr>
+				</table></div>
+				<div class="discus" id="discus"><table>
+					<tr><td class="profpic" rowspan="2"><img src="profpic.jpg" class="ppic" /></td>
+					<td class="usrnm">User 1</td></tr>
+					<tr><td class="crap" >Go fuck yourself.</td></tr>
+				</table></div>
+				<div class="discus" id="discus"><table>
+					<tr><td class="profpic" rowspan="2"><img src="profpic.jpg" class="ppic" /></td>
+					<td class="usrnm">User 2</td></tr>
+					<tr><td class="crap" >You fuck yourself, I already have a girlfriend.</td></tr>
+				</table></div>
+			</div>
+			
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			asdasdasd
+		</div>
+		<div class="replyy">
+			<div class="rplyarea" >
+				<div style="letter-spacing:25px;"><button class="rply">Make a Post</button><strong style="font-family:serif;font-size:20px;position:relative;left:340px;color:#0c3105;" ><span id="bold">B</span></strong><em style="font-family:serif;font-size:20px;position:relative;left:340px;color:#0c3105;"><span id="italic">I</span></em><strong style="font-family:serif;font-size:20px;text-decoration:underline;letter-spacing:0px;position:relative;left:340px;color:#0c3105;"><span id="underline">U</span></strong>
+					<span class="glyphicon glyphicon-chevron-down" id="clsrply" style="color:#0c3105;font-size:20px;position:relative;left:-150px;"></span>
+				</div>
+				<textarea class="reply"></textarea>
+			</div>
+			<button class="rply2"><span class="glyphicon glyphicon-chevron-up" style="color:#0c3105;font-size:20px;"></span></button>
+		</div>
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">New Topic</h4>
+					</div>
+					<div class="modal-body">
+					<p><input type="text" class="ntpc txtfld" id="thead1" placeholder="Topic Name" style="height:50px;"/><br/><textarea style="margin-top:10px;" id="tbody1" placeholder="Description of the topic" class="ntpc txtfld" rows="5" ></textarea><br/>
+					<textarea  class="ntpc txtfld" placeholder="First Discussion" id="tpst1" style="margin-top:10px;border-color:#e6e6e6"rows="7" ></textarea></p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" id="sbmttpc" >Create new topic</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

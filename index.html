@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Key Talks</title>
+		<link rel = "stylesheet" type="text/css" href = "css.css" >
+		<style>
+			body{
+				margin:0px;color:#f0f0f0;font-family: "adam";
+			}
+			input.inp1{
+				height : 45px; width : 350px;border-radius:10px;background-color: #ffffff;
+				border:2px solid #d2d2d2 ;position:absolute;left:50%;top:50%;margin-left:-200px;
+				font-family : sans-serif;font-size:20px;padding-left:15px;color:#a8a8a8;
+			}
+			img.logo{
+				width :200px;
+			}
+			h1{
+				font-size:30px;font-weight: 1500;letter-spacing: 20px;color:#6ad926;
+			}
+			h2{
+				font-family:"arci";font-weight:0;font-size:15px;letter-spacing:3px; color : #d8f8ae;
+			}
+			div.logo{
+				position:absolute;left:50%;top:50%;margin-left:-530px;margin-top:-100px;
+			}
+			div.log{
+				height: 50px; width: 200px;position:absolute;left:50%;top:50%;border:1px solid #446142;border-radius:10px;background-color:#337f1f;text-align:center;
+				background: -webkit-linear-gradient(#62ab4f, #337f1f); 
+				background: -o-linear-gradient(#62ab4f, #337f1f);
+				background: -moz-linear-gradient(#62ab4f, #337f1f); 
+				background: linear-gradient(#62ab4f, #337f1f);box-shadow:inset 0px -1px 1px #154405;
+				box-shadow:inset 0px 1px 1px #9ad287;color:#ffffff;font-weight:bold;font-size:24px;font-family:sans-serif;text-shadow: 0px 3px 4px #2d5124;
+			}
+			div.sign{
+				height: 50px; width: 225px;position:absolute;left:50%;top:50%;border:1px solid #a32810;border-radius:10px;background-color:#cc6450;text-align:center;
+				background: -webkit-linear-gradient(#cc6450, #ba341a); 
+				background: -o-linear-gradient(#cc6450, #ba341a);
+				background: -moz-linear-gradient(#cc6450, #ba341a); 
+				background: linear-gradient(#cc6450, #ba341a);box-shadow:inset 0px -1px 1px #154405;
+				box-shadow:inset 0px 1px 1px #eba395;color:#ffffff;font-weight:bold;font-size:24px;font-family:sans-serif;text-shadow: 0px 3px 4px #571b0f;
+			}
+			div.unselect{
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select:none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select:none;
+				cursor: link;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="bk"><tr><td>
+		</td></tr></table>
+				<div class = "logo">
+					<div style = "border-bottom: 2px solid #f0f0f0; width : 177px;">
+						<table>
+							<tr><td>
+								<img class="logo" src="logo.png"/>
+							</td></tr>
+							<tr><td style = "padding-top: 10px;">
+								<h1>TALKS</h1>
+							</td></tr>
+						</table>
+					</div>
+					<h2>Create, Connect, Collaborate</h2>
+				</div>
+				<input type="text" class="inp1" value="Username" style="margin-top:-130px;" onfocus ="if(this.value == 'Username'){this.value=' ';this.style.color = '#000000';}else{this.style.color = '#000000';}"
+					onfocusout = "if((this.value =='')||(this.value==' ')||(this.value=='  ')||(this.value=='   ')||(this.value=='     ')){this.value = 'Username';this.style.color='#a8a8a8';}"/>
+				<input type="password" class="inp1" style = "margin-top:-60px;" />
+				<a href=""><div class = "log" style="margin-left:-125px; margin-top:20px;" 
+					onmouseover = "this.style.background = 'linear-gradient(#6ebf67, #337f1f)';"
+					onmouseout = "this.style.background = 'linear-gradient(#62ab4f, #337f1f)';"
+				><div class="unselect" style="position:relative;top:50%;margin-top:-15px;">Log In</div></div></a>
+				<a href="signup.html"><div class = "sign" style="margin-left:300px; margin-top:-25px;" 
+					onmouseover = "this.style.background = 'linear-gradient(#ea735c, #ba341a)';"
+					onmouseout = "this.style.background = 'linear-gradient(#cc6450, #ba341a)';"
+				><div class="unselect" style="position:relative;top:50%;margin-top:-15px;">Sign Up</div></div></a>
+	</body>
+</html>
